@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         Tv tv01 = new Tv("LG", "올레드 오브제컬렉션 evo", 65);
-        tv01.connect();
+        tv01.connect(); // TV에 연결되었습니다.
         tv01.printInfo();  // 이 제품은 LG 올레드 오브제컬렉션 evo 65인치 TV 입니다.
         tv01.getSerialNum();  // 일련 번호 : 7c7b51c4-3184 (실행 시, 랜덤으로 계속 바뀜)
         System.out.println("----------------------------------------------");
@@ -15,7 +15,7 @@ public class Main {
         System.out.println("\n");
 
         Tv tv02 = new Tv("삼성", "Crystal UHD", 85);
-        tv02.connect();
+        tv02.connect(); // TV에 연결되었습니다.
         tv02.printInfo(); // 이 제품은 삼성 Crystal UHD 85인치 TV 입니다.
         tv02.getSerialNum(); // 일련 번호 : 7a22098e-aa19
         System.out.println("----------------------------------------------");
