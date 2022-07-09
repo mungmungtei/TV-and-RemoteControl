@@ -7,6 +7,7 @@ public abstract class Electronics {
     private final int inch;  // 인치
     private final String serialNum = UUID.randomUUID().toString().substring(0,13);  // 일련 번호
 
+    abstract void connect();
     public Electronics(String manufacturer, String model, int inch) {
         this.manufacturer = manufacturer;
         this.model = model;
@@ -20,5 +21,4 @@ public abstract class Electronics {
     public void printInfo() {  // 제품 정보 알려주기
         System.out.println("이 제품은 " + manufacturer + " " + model + " " + inch + "인치 TV 입니다.");
     }
-
 }

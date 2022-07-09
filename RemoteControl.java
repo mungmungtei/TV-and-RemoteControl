@@ -7,7 +7,6 @@ public interface RemoteControl {
     public void turnOff();
 
     public int adjustVolume(int volume);
-
     public int changeChannel(int channel);
 
 }

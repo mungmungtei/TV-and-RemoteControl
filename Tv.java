@@ -8,6 +8,11 @@ public class Tv extends Electronics implements RemoteControl{
     }
 
     @Override
+    void connect() {
+        System.out.println("TV에 연결되었습니다.");
+    }
+
+    @Override
     public void turnOn() {
         System.out.println("TV가 켜졌습니다.");
     }
@@ -45,4 +50,5 @@ public class Tv extends Electronics implements RemoteControl{
     public void tvInfo() {
         System.out.println("현재 Channel : " + nowChannel + " 번 | Volume : " + nowVolume);
     }
+
 }
